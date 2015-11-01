@@ -1,9 +1,13 @@
+*::selection { background-color: #FFAA00; }
+*::-moz-selection { background-color: #D37D07; } /* Wierd things are on with Firefox */
+
 .wrapper, section { max-width: 900px }
 /*section { margin-bottom: 50vh; }*/
 ul { margin-bottom: 0; }
 section { margin-top: 0; }
 p { margin-bottom: .5em; }
 code { background-color: #525252; border-radius: 0; }
+a:focus { outline-width: 0; }
 
 div.project { padding: .5em 0; }
 div.project:not(:last-child) { border-bottom: 2px double rgba(128, 128, 128, .5); }
@@ -11,10 +15,11 @@ div.project h1 .title-link { position: absolute; left: -1px; margin-top: .25em; 
 div.project h1:hover .title-link, div.project h1 .title-link:hover { display: inline; }
 
 div.info-item { display: block; }
-span.info-item { font-weight: bold; text-decoration: underline; }
+span.info-item { display: inline-block; font-weight: bold; text-decoration: underline; }
 span.info-item::after { content: ": "; display: inline-block; }
 
 span.hidden-text { display: none; }
-p#hü3 a { color: inherit; cursor: default; }
+p#hü3 a { color: inherit; cursor: text; }
 p#hü3 a::before { content: "HÜ3"; }
-p#hü3 a:focus { outline-width: 0; }
+
+.display-block { display: block !important; }
