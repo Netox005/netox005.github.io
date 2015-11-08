@@ -53,59 +53,68 @@
   },
   "dubtrack-youtube-importer": {
     "title": "DUBTRACK YOUTUBE PLAYLIST IMPORTER (beta)",
-    "description": "Simple Youtube Importer for Dubtrack.",
+    "description2": "Simple Youtube Importer for Dubtrack.\n*Upcoming Records \"perfected\" the script! Go check it out at [http://upcomingrecords.com/](http://upcomingrecords.com/youtube-2-dubtrack/)*",
+    "description": "Simple Youtube Importer for Dubtrack.\n<b>Upcoming Records \"perfected\" the script! Go check it out at <a href=\"http://upcomingrecords.com/youtube-2-dubtrack/\" target=\"_blank\">http://upcomingrecords.com/</a></b>",
     "info-items": [
       {
-        "name": "Project on GitHub",
-        "text2": "[Inside my global Dubtrack repository.](https://github.com/Netox005/Dubtrack/blob/master/javascript/yt-importer.js)",
-        "text": "<a href=\"https://github.com/Netox005/Dubtrack/blob/master/javascript/yt-importer.js\" target=\"_blank\">Inside my global Dubtrack repository.</a>"
+        "name2": "~Project on GitHub~",
+        "name": "<span style=\"text-decoration: line-through\">Project on GitHub</span>",
+        "text2": "~[Inside my global Dubtrack repository.](https://github.com/Netox005/Dubtrack/blob/master/javascript/yt-importer.js)~",
+        "text": "<span style=\"text-decoration: line-through\"><a href=\"https://github.com/Netox005/Dubtrack/blob/master/javascript/yt-importer.js\" target=\"_blank\">Inside my global Dubtrack repository.</a></span>"
       },
       {
-        "name": "Bookmark",
-        "text2": "[Dubtrack Youtube Playlist Importer] (Drag to your bookmarks)(javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/yt-importer.js');)",
-        "text": "<a href=\"javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/yt-importer.js');\" target=\"_blank\">Dubtrack Youtube Playlist Importer</a> (Drag to your bookmarks)"
+        "name2": "~Bookmark~",
+        "name": "<span style=\"text-decoration: line-through\">Bookmark</span>",
+        "text2": "~[Dubtrack Youtube Playlist Importer] (Drag to your bookmarks)(javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/yt-importer.js');)~",
+        "text": "<span style=\"text-decoration: line-through\"><a href=\"javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/yt-importer.js');\" target=\"_blank\">Dubtrack Youtube Playlist Importer</a> (Drag to your bookmarks)</span>"
       },
       {
-        "name": "How to enable",
-        "text": "Click on the bookmark once you're in Dubtrack."
+        "name2": "~How to enable~",
+        "name": "<span style=\"text-decoration: line-through\">How to enable</span>",
+        "text2": "~Click on the bookmark once you're in Dubtrack.~",
+        "text": "<span style=\"text-decoration: line-through\">Click on the bookmark once you're in Dubtrack.</span>"
       },
       {
-        "name": "How to import from public playlist",
+        "name2": "~How to import from public playlist~",
+        "name": "<span style=\"text-decoration: line-through\">How to import from public playlist</span>",
         "text2": [
-          "Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.",
-          "Copy and paste to console: [[YTImporter.import('{name of youtube account that owns the playlist}', '{name of playlist in youtube}', '{name of playlist in dubtrack}');]]",
-          "Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).",
-          "Hit Enter"
+          "~Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.~",
+          "~Copy and paste to console: [[YTImporter.import('{name of youtube account that owns the playlist}', '{name of playlist in youtube}', '{name of playlist in dubtrack}');]]~",
+          "~Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).~",
+          "~Hit Enter~"
         ],
         "text": [
-          "Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.",
-          "Copy and paste to console: <code>YTImporter.import('{name of youtube account that owns the playlist}', '{name of playlist in youtube}', '{name of playlist in dubtrack}');</code>",
-          "Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).",
-          "Hit Enter"
+          "<span style=\"text-decoration: line-through\">Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.</span>",
+          "<span style=\"text-decoration: line-through\">Copy and paste to console: <code>YTImporter.import('{name of youtube account that owns the playlist}', '{name of playlist in youtube}', '{name of playlist in dubtrack}');</code></span>",
+          "<span style=\"text-decoration: line-through\">Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).</span>",
+          "<span style=\"text-decoration: line-through\">Hit Enter</span>"
         ],
-        "list-profit": "(wait for it to import)"
+        "list-profit2": "~(wait for it to import)~",
+        "list-profit": "<span style=\"text-decoration: line-through\">(wait for it to import)</span>"
       },
       {
-        "name": "How to import from private playlist",
+        "name": "~How to import from private playlist~",
+        "name": "<span style=\"text-decoration: line-through\">How to import from private playlist</span>",
         "text2": [
-          "Get the playlist url, it should look like this: [[https://youtube.com/playlist?list={a bunch of characters}]]",
-          "Copy the \"bunch of characters\". Thats the Playlist ID and it will be helpful later.",
-          "Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.",
-          "Copy and paste to console: [[YTImporter.importFromPlaylistId('{id of playlist in youtube}', '{name of playlist in dubtrack}');]]",
-          "Replace the stuff in curly brackets that says \"{id of playlist in youtube}\" with the Playlist ID you copied before.",
-          "Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).",
-          "Hit Enter"
+          "~Get the playlist url, it should look like this: [[https://youtube.com/playlist?list={a bunch of characters}]]~",
+          "~Copy the \"bunch of characters\". Thats the Playlist ID and it will be helpful later.~",
+          "~Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.~",
+          "~Copy and paste to console: [[YTImporter.importFromPlaylistId('{id of playlist in youtube}', '{name of playlist in dubtrack}');]]~",
+          "~Replace the stuff in curly brackets that says \"{id of playlist in youtube}\" with the Playlist ID you copied before.~",
+          "~Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).~",
+          "~Hit Enter~"
         ],
         "text": [
-          "Get the playlist url, it should look like this: <code>https://youtube.com/playlist?list={a bunch of characters}</code>",
-          "Copy the \"bunch of characters\". Thats the Playlist ID and it will be helpful later.",
-          "Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.",
-          "Copy and paste to console: <code>YTImporter.importFromPlaylistId('{id of playlist in youtube}', '{name of playlist in dubtrack}');</code>",
-          "Replace the stuff in curly brackets that says \"{id of playlist in youtube}\" with the Playlist ID you copied before.",
-          "Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).",
-          "Hit Enter"
+          "<span style=\"text-decoration: line-through\">Get the playlist url, it should look like this: <code>https://youtube.com/playlist?list={a bunch of characters}</code></span>",
+          "<span style=\"text-decoration: line-through\">Copy the \"bunch of characters\". Thats the Playlist ID and it will be helpful later.</span>",
+          "<span style=\"text-decoration: line-through\">Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.</span>",
+          "<span style=\"text-decoration: line-through\">Copy and paste to console: <code>YTImporter.importFromPlaylistId('{id of playlist in youtube}', '{name of playlist in dubtrack}');</code></span>",
+          "<span style=\"text-decoration: line-through\">Replace the stuff in curly brackets that says \"{id of playlist in youtube}\" with the Playlist ID you copied before.</span>",
+          "<span style=\"text-decoration: line-through\">Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).</span>",
+          "<span style=\"text-decoration: line-through\">Hit Enter</span>"
         ],
-        "list-profit": "(wait for it to import)"
+        "list-profit2": "~(wait for it to import)~",
+        "list-profit": "<span style=\"text-decoration: line-through\">(wait for it to import)</span>"
       }
     ]
   }
