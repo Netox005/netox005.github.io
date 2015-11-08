@@ -18,9 +18,6 @@
     <link rel="stylesheet" href="stylesheets/netuxmodification.css">
   </head>
   <body>
-    <?php
-      echo "omai";
-    ?>
     <div class="wrapper">
       <section>
         <div id="title">
@@ -31,100 +28,9 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham" target="_blank">mattgraham</a></span>
         </div>
 
-        <div class="project" id="dubtrack-extras">
-          <a href="#dubtrack-extras"/><h1>DUBTRACK-EXTRAS (alpha v1.5 | non-functional)</h1></a>
-          <p>A Dubtrack script I'm working on.</p>
-          <div class="info">
-            <div class="info-item">
-              <span class="info-item">Project on GitHub</span>
-              <a href="https://github.com/Netox005/Dubtrack/blob/master/javascript/dubtrack_extras.js" target="_blank">Inside my global Dubtrack repository.</a>
-            </div>
-            <div class="info-item">
-              <span class="info-item">Bookmark</span>
-              <a href="javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/dubtrack_extras.js');" target="_blank">Dubtrack Extras</a> (Drag to your bookmarks)
-            </div>
-            <div class="info-item">
-              <span class="info-item">How to enable</span>
-              Click on the bookmark once you're in Dubtrack.
-            </div>
-            <div class="info-item">
-              <span class="info-item display-block">Features</span>
-              <ul>
-                <li>On song change notification</li>
-                <li>On dub (upvote & downvote) notification</li>
-                <li>Volume percentage</li>
-              </ul>
-            </div>
-            <div class="info-item">
-              <span class="info-item display-block">To do</span>
-              <ul>
-                <li>Update for new design.</li>
-                <li>Add options menu.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="project" id="dubtrack-bot">
-          <a href="#dubtrack-bot"/><h1>DUBTRACK-BOT</h1></a>
-          <p>
-            A BOT for Dubtrack I'm working on. Right now it is working on the <a href="https://www.dubtrack.fm/join/nightblue3" target="_blank">NB3 Room</a>
-            </br>
-            Go say hi to him with "!sayhi netuxbot" !
-          </p>
-          <div class="info">
-            <div class="info-item">
-              <span class="info-item">Project on GitHub</span>
-              <i>I plan on maintining this project private until I finish it. So no repository yet :(</i>
-            </div>
-            <div class="info-item">
-              <span class="info-item">Command list</span>
-              Command link is just a <a href="https://github.com/Netox005/Dubtrack/blob/master/bot/commands.md" target="_blank">click</a> away!
-            </div>
-          </div>
-        </div>
-        <div class="project" id="dubtrack-youtube-importer">
-          <a href="#dubtrack-youtube-importer"/><h1>DUBTRACK YOUTUBE PLAYLIST IMPORTER (beta)</h1></a>
-          <p> Simple Youtube Importer for Dubtrack</p>
-          <div class="info">
-            <div class="info-item">
-              <span class="info-item">Project on GitHub</span>
-              <a href="https://github.com/Netox005/Dubtrack/blob/master/javascript/yt-importer.js" target="_blank">Inside my global Dubtrack repository.</a>
-            </div>
-            <div class="info-item">
-              <span class="info-item">Bookmark</span>
-              <a href="javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/yt-importer.js');" target="_blank">Dubtrack Youtube Playlist Importer</a> (Drag to your bookmarks)
-            </div>
-            <div class="info-item">
-              <span class="info-item">How to enable</span>
-              Click on the bookmark once you're in Dubtrack.
-            </div>
-            <div class="info-item">
-              <span class="info-item display-block">How to import from public playlist</span>
-              <ul>
-                <li>Go to Dubtrack, open the browser console pressing F12. If you're not on the "console" tab then go there.</li>
-                <li>Copy and paste to console: <code>YTImport.import('{name of youtube account that owns the playlist}', '{name of playlist in youtube}', '{name of playlist in dubtrack}');</code></li>
-                <li>Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).</li>
-                <li>Hit Enter</li>
-                <li><span style="cursor: help;" onmouseover="$(this).parent().find('span.hidden-text').show();" onmouseout="$(this).parent().find('span.hidden-text').hide();">???</span > <span class="hidden-text">(wait for it to export)</span></li>
-                <li>Profit!</li>
-              </ul>
-            </div>
-            <div class="info-item">
-              <span class="info-item display-block">How to import from private playlist</span>
-              <ul>
-                <li>Get the playlist url, it should look like this: <code>https://youtube.com/playlist?list={a bunch of characters}</code></li>
-                <li>Copy the "bunch of characters"</li>
-                <li>Go to Dubtrack, open browser console pressing F12. If you're not on the "console" tab then go there.</li>
-                <li>Copy and paste to console: <code>YTImport.importFromPlaylistId('{id of playlist in youtube}', '{name of playlist in dubtrack}');</code></li>
-                <li>Replace the stuff in curly brackets that says "{id of playlist in youtube} with the characters you copied before (thats the playlist ID!).</li>
-                <li>Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).</li>
-                <li>Hit Enter</li>
-                <li><span style="cursor: help;" onmouseover="$(this).parent().find('span.hidden-text').show();" onmouseout="$(this).parent().find('span.hidden-text').hide();">???</span > <span class="hidden-text">(wait for it to export)</span></li>
-                <li>Profit!</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <span id="remove-if-loaded">Loading projects... from JSON!</span>
+        <noscript>Please enable Javascript or use a browser that supports it to see the magic :D</noscript>
+        <script src="javascript/project-loader.js"></script>
       </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->

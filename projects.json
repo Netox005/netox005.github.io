@@ -1,0 +1,112 @@
+{
+  "dubtrack-extras": {
+    "title": "DUBTRACK-EXTRAS (alpha v1.5 | non-functional)",
+    "description": "A Dubtrack script I'm working on.",
+    "info-items": [
+      {
+        "name": "Project on GitHub",
+        "text2": "[Inside my global Dubtrack repository.](https://github.com/Netox005/Dubtrack/blob/master/javascript/dubtrack_extras.js)",
+        "text": "<a href=\"https://github.com/Netox005/Dubtrack/blob/master/javascript/dubtrack_extras.js\" target=\"_blank\">Inside my global Dubtrack repository.</a>"
+      },
+      {
+        "name": "Bookmark",
+        "text2": "[Dubtrack Extras](javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/dubtrack_extras.js');) (Drag to your bookmarks)",
+        "text": "<a href=\"javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/dubtrack_extras.js');\" target=\"_blank\">Dubtrack Extras</a> (Drag to your bookmarks)"
+      },
+      {
+        "name": "How to enable",
+        "text": "Click on the bookmark once you're in Dubtrack."
+      },
+      {
+        "name": "Features",
+        "text": [
+          "On song change notification",
+          "On dub (upvote & downvote) notification",
+          "Volume percentage"
+        ]
+      },
+      {
+        "name": "To do",
+        "text": [
+          "Update for new design",
+          "Add options menu"
+        ]
+      }
+    ]
+  },
+  "dubtrack-bot": {
+    "title": "DUBTRACK-BOT",
+    "description2": "A BOT for Dubtrack I'm working on. Right now it is working on the [NB3 Room](https://www.dubtrack.fm/join/nightblue3).\nGo say hi to him with \"!sayhi netuxbot\" !",
+    "description": "A BOT for Dubtrack I'm working on. Right now it is working on the <a href=\"https://www.dubtrack.fm/join/nightblue3\" target=\"_blank\">NB3 Room</a>.\nGo say hi to him with \"!sayhi netuxbot\" !",
+    "info-items": [
+      {
+        "name": "Project on GitHub",
+        "text2": "*I plan on maintaining this project private until I finish it. So no repository yet :(*",
+        "text": "<i>I plan on maintaining this project private until I finish it. So no repository yet :(</i>"
+      },
+      {
+        "name": "Command List",
+        "text2": "Command link is just a [click](https://github.com/Netox005/Dubtrack/blob/master/bot/commands.md) away!",
+        "text": "Command link is just a <a href=\"https://github.com/Netox005/Dubtrack/blob/master/bot/commands.md\" target=\"_blank\">click</a> away!"
+      }
+    ]
+  },
+  "dubtrack-youtube-importer": {
+    "title": "DUBTRACK YOUTUBE PLAYLIST IMPORTER (beta)",
+    "description": "Simple Youtube Importer for Dubtrack.",
+    "info-items": [
+      {
+        "name": "Project on GitHub",
+        "text2": "[Inside my global Dubtrack repository.](https://github.com/Netox005/Dubtrack/blob/master/javascript/yt-importer.js)",
+        "text": "<a href=\"https://github.com/Netox005/Dubtrack/blob/master/javascript/yt-importer.js\" target=\"_blank\">Inside my global Dubtrack repository.</a>"
+      },
+      {
+        "name": "Bookmark",
+        "text2": "[Dubtrack Youtube Playlist Importer] (Drag to your bookmarks)(javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/yt-importer.js');)",
+        "text": "<a href=\"javascript:$.getScript('https://rawgit.com/Netox005/Dubtrack/master/javascript/yt-importer.js');\" target=\"_blank\">Dubtrack Youtube Playlist Importer</a> (Drag to your bookmarks)"
+      },
+      {
+        "name": "How to enable",
+        "text": "Click on the bookmark once you're in Dubtrack."
+      },
+      {
+        "name": "How to import from public playlist",
+        "text2": [
+          "Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.",
+          "Copy and paste to console: [[YTImporter.import('{name of youtube account that owns the playlist}', '{name of playlist in youtube}', '{name of playlist in dubtrack}');]]",
+          "Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).",
+          "Hit Enter"
+        ],
+        "text": [
+          "Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.",
+          "Copy and paste to console: <code>YTImporter.import('{name of youtube account that owns the playlist}', '{name of playlist in youtube}', '{name of playlist in dubtrack}');</code>",
+          "Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).",
+          "Hit Enter"
+        ],
+        "list-profit": "(wait for it to import)"
+      },
+      {
+        "name": "How to import from private playlist",
+        "text2": [
+          "Get the playlist url, it should look like this: [[https://youtube.com/playlist?list={a bunch of characters}]]",
+          "Copy the \"bunch of characters\". Thats the Playlist ID and it will be helpful later.",
+          "Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.",
+          "Copy and paste to console: [[YTImporter.importFromPlaylistId('{id of playlist in youtube}', '{name of playlist in dubtrack}');]]",
+          "Replace the stuff in curly brackets that says \"{id of playlist in youtube}\" with the Playlist ID you copied before.",
+          "Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).",
+          "Hit Enter"
+        ],
+        "text": [
+          "Get the playlist url, it should look like this: <code>https://youtube.com/playlist?list={a bunch of characters}</code>",
+          "Copy the \"bunch of characters\". Thats the Playlist ID and it will be helpful later.",
+          "Go to Dubtrack, open the browser console pressing F12. If you're not on the \"console\" tab then go there.",
+          "Copy and paste to console: <code>YTImporter.importFromPlaylistId('{id of playlist in youtube}', '{name of playlist in dubtrack}');</code>",
+          "Replace the stuff in curly brackets that says \"{id of playlist in youtube}\" with the Playlist ID you copied before.",
+          "Replace the stuff inside curly brackets with what it tells you to (also remove the curly brackets).",
+          "Hit Enter"
+        ],
+        "list-profit": "(wait for it to import)"
+      }
+    ]
+  }
+}
