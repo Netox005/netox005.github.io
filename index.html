@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Netux GitHub.IO Website</title>
+    <title>GitHub Websites Netux page</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js'></script>
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -17,10 +18,13 @@
     <link rel="stylesheet" href="stylesheets/netuxmodification.css">
   </head>
   <body>
+    <?php
+      print("omai");
+    ?>
     <div class="wrapper">
       <section>
         <div id="title">
-          <h1>Netux GitHub.IO Website</h1>
+          <h1>GitHub Websites <span style="font-weight: bold; color: white;">Netux</span> page</h1>
           <p id="hü3"><a href="http://www.urbandictionary.com/define.php?term=hue&defid=6868609" target="_blank"></a></p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/Netox005">Netox005</a></span>
@@ -28,7 +32,7 @@
         </div>
 
         <div class="project" id="dubtrack-extras">
-          <h1><a href="#dubtrack-extras"/><img src="./images/chain.png" class="title-link"></a>DUBTRACK-EXTRAS (alpha v1.5)</h1>
+          <a href="#dubtrack-extras"/><h1>DUBTRACK-EXTRAS (alpha v1.5 | non-functional)</h1></a>
           <p>A Dubtrack script I'm working on.</p>
           <div class="info">
             <div class="info-item">
@@ -54,13 +58,14 @@
             <div class="info-item">
               <span class="info-item display-block">To do</span>
               <ul>
+                <li>Update for new design.</li>
                 <li>Add options menu.</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="project" id="dubtrack-bot">
-          <h1><a href="#dubtrack-bot"/><img src="./images/chain.png" class="title-link"></a>DUBTRACK-BOT</h1>
+          <a href="#dubtrack-bot"/><h1>DUBTRACK-BOT</h1></a>
           <p>
             A BOT for Dubtrack I'm working on. Right now it is working on the <a href="https://www.dubtrack.fm/join/nightblue3" target="_blank">NB3 Room</a>
             </br>
@@ -78,7 +83,7 @@
           </div>
         </div>
         <div class="project" id="dubtrack-youtube-importer">
-          <h1><a href="#dubtrack-youtube-importer"/><img src="./images/chain.png" class="title-link"></a>DUBTRACK YOUTUBE PLAYLIST IMPORTER (beta)</h1>
+          <a href="#dubtrack-youtube-importer"/><h1>DUBTRACK YOUTUBE PLAYLIST IMPORTER (beta)</h1></a>
           <p> Simple Youtube Importer for Dubtrack</p>
           <div class="info">
             <div class="info-item">
@@ -123,5 +128,6 @@
       </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script>$(document).ready(function() { $('#all-content').perfectScrollbar({ wheelSpeed: 50, suppressScrollX: true }); });</script>
   </body>
 </html>
