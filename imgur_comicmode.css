@@ -1,0 +1,5 @@
+#right-content, #inside .left.post-pad .post-header.fixed { display: none; }
+#inside .left.post-pad { float: none; }
+#inside .left.post-pad .post-container, #inside .left.post-pad .post-header, #comments-container { width: initial; }
+#inside .left.post-pad .post-container { padding-top: 0 !important; }
+#inside .left.post-pad .post-images .post-image img { max-width: calc(100% - 2px); }
