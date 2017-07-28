@@ -1,39 +1,106 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>GitHub Websites Netux page</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js'></script>
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="stylesheets/netuxmodification.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <section>
-        <div id="title">
-          <h1>GitHub Websites <span style="font-weight: bold; color: white;">Netux</span> page</h1>
-          <p id="hü3"><a href="http://www.urbandictionary.com/define.php?term=hue&defid=6868609" target="_blank"></a></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/Netox005">Netox005</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham" target="_blank">mattgraham</a></span>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <style>
+    html {
+      height: 100%;
+    }
 
-        <span id="remove-if-loaded">Loading projects... from JSON!</span>
-        <noscript>Please enable Javascript or use a browser that supports it to see the magic :D</noscript>
-        <script src="javascript/project-loader.js"></script>
-      </section>
+    body {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a.href-content[href]::before {
+      content: attr(href);
+    }
+
+    body,
+    a.disguised {
+      color: #000;
+    }
+
+    #app {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #title {
+      text-align: center;
+    }
+    #title h1 {
+      font-size: 3rem;
+      margin: .5rem;
+    }
+
+    #links {
+      padding-left: .5em;
+    }
+    #links li {
+      margin: .25em 0;
+    }
+
+    #footer {
+      position: absolute;
+      width: 100%;
+      bottom: -4em;
+      margin-bottom: 1em;
+      color: #222;
+      opacity: .75;
+      text-align: center;
+      font-style: italic;
+      font-size: .8em;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="title">
+      <h1>Well, hello there!</h1>
+      <i>
+        <a class="disguised" href="https://youtu.be/PRgATG6PUA0">
+          Are you lost, traveler?
+        </a>
+      </i>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    <script>$(document).ready(function() { $('#all-content').perfectScrollbar({ wheelSpeed: 50, suppressScrollX: true }); });</script>
-  </body>
+    <ul id="links">
+      <li>
+        <a href="https://netux.site/">
+          Are you looking for my website?
+        </a>
+      </li>
+      <li>
+        <a href="https://cloudy.netux.site/">
+          perhaps my other website, the DNS-like one;
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Netox005">
+          or maybe my GitHub profile?
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Netox005/Dubtrack">
+          or more directly, a list of public things I made for DubtrackFM that I have lying around there
+          (that includes CSS Stylesheets!).
+        </a>
+      </li>
+    </ul>
+    <div id="footer">
+      or if you just want to chat, so just <a class="href-content" href="mailto:send.me.an.email@netux.ml"></a>.
+    </div>
+  </div>
+</body>
 </html>
