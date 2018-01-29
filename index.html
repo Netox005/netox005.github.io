@@ -14,6 +14,7 @@
       height: 100%;
       margin: 0;
       font-family: sans-serif;
+      background-color: #F5F5F5;
       display: flex;
     }
 
@@ -25,9 +26,8 @@
       content: attr(href);
     }
 
-    body,
-    a.disguised {
-      color: #000;
+    p {
+      margin: .25rem 0;
     }
 
     #app {
@@ -35,27 +35,38 @@
       width: 100%;
       max-width: 600px;
       margin: auto;
+      text-align: center;
     }
 
     #title {
-      text-align: center;
-    }
-    #title h1 {
-      font-size: 3rem;
       margin: .5rem;
+      font-size: 2.5rem;
+      font-weight: 700;
     }
 
-    #links {
-      padding-left: .5em;
+    #text {
+      margin: 1rem 0;
     }
-    #links li {
-      margin: .25em 0;
+
+    #go-to-site {
+      position: relative;
+      padding: 1rem;
+      color: #FFF;
+      background-color: #2196F3;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+      transition: background-color 100ms linear;
+      display: inline-block;
+    }
+
+    #go-to-site:active {
+      background-color: #1D81D3;
     }
 
     #footer {
-      position: absolute;
+      position: fixed;
       width: 100%;
-      bottom: -4em;
+      left: 0;
+      bottom: 0;
       margin-bottom: 1em;
       color: #222;
       opacity: .75;
@@ -67,37 +78,12 @@
 </head>
 <body>
   <div id="app">
-    <div id="title">
-      <h1>Well, hello there!</h1>
-      <i>
-        <a class="disguised" href="https://youtu.be/PRgATG6PUA0">
-          Are you lost, traveler?
-        </a>
-      </i>
+    <span id="title">Nothing to see here</span>
+    <div id="text">
+      <p>Why don't you take a look at my site, would ya?</p>
+      <p>It's got some links that might be of your help!</p>
     </div>
-    <ul id="links">
-      <li>
-        <a href="https://netux.site/">
-          Are you looking for my website?
-        </a>
-      </li>
-      <li>
-        <a href="https://cloudy.netux.site/">
-          perhaps my other website, the DNS-like one;
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/Netox005">
-          or maybe my GitHub profile?
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/Netox005/Dubtrack">
-          or more directly, a list of public things I made for DubtrackFM that I have lying around there
-          (that includes CSS Stylesheets!).
-        </a>
-      </li>
-    </ul>
+    <a id="go-to-site" href="https://netux.site/">Go to netux.site</a>
     <div id="footer">
       or if you just want to chat, so just <a class="href-content" href="mailto:send.me.an.email@netux.ml"></a>.
     </div>
